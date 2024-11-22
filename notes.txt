@@ -1,0 +1,4 @@
+./site-info/index.html
+<h6><a target="_blank" href="https://github.com/ms7ru/ms7ru.github.io">-> ./github-repo</a></h6>
+update link
+
