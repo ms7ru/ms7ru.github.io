@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect Example</title>
+</head>
+<body>
+    <script>
+        // Change the URL below to your desired redirect destination
+        const redirectUrl = "https://ms7ru.github.io/projects/clock/;
+
+        // Redirect after 3 seconds (optional delay)
+        setTimeout(() => {
+            window.location.href = redirectUrl;
+        }, 50);
+
+        // Optionally, you can provide feedback to users
+        document.body.innerHTML = `
+            <p>Redirecting you to <a href="${redirectUrl}">${redirectUrl}</a> in 0.05 seconds...</p>
+        `;
+    </script>
+</body>
+</html>
