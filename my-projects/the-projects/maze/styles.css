@@ -1,0 +1,34 @@
+body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #mazeContainer {
+            display: grid;
+            gap: 2px;
+        }
+        .cell {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wall {
+            background-image: url('1.png');
+            background-size: cover;
+        }
+        .start {
+            background-color: #0f0;
+        }
+        .end {
+            background-color: #f00;
+        }
+        .player {
+            background-image: url('c.png');
+            background-size: cover;
+        }

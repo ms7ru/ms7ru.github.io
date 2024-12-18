@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ohio Ticket Booking</title>
+    <style>
+        .error {
+            color: red;
+        }
+        .car-tickets {
+            display: none;
+        }
+        .car-ticket {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px 0;
+            position: relative;
+        }
+        .button {
+            cursor: pointer;
+            font-weight: 700;
+            font-family: Helvetica, "sans-serif";
+            transition: all .2s;
+            padding: 10px 20px;
+            border-radius: 100px;
+            background: #cfef00;
+            border: 1px solid transparent;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+        .button:hover {
+            background: #c4e201;
+        }
+        .button > svg {
+            width: 34px;
+            margin-left: 10px;
+            transition: transform .3s ease-in-out;
+        }
+        .button:hover svg {
+            transform: translateX(5px);
+        }
+        .button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Ohio Ticket Booking</h1>
+    
+    <form id="bookingForm">
+        <label for="date">Date:</label>
+        <select id="date" name="date" required>
+            <option value="never">Never</option>
+            <option value="now">Now</option>
+        </select><br><br>
+        
+        <label for="from">Leave From:</label>
+        <select id="from" name="from" required>
+            <option value="I Dont Want to go">I Dont Want to go</option>
+            <option value="Delhi">Delhi</option>
+        </select><br><br>
+        
+        <input type="submit" value="Book Now">
+        <p id="errorMessage" class="error"></p>
+    </form>
+
+    <div id="carTickets" class="car-tickets">
+        <h2>Available Tickets:</h2>
+        <div class="car-ticket">
+            <h3>Chicken Nuget: </h3>
+            <p>12 ØⱧłØ $</p>
+            <h4>Details about Chicken Nuget:</h4>
+            <p>Best Quality. Will sing "Gedagedigedagedago Abin mery alontamago" All the time and will anoy the heck out of you. Customers love it.(we are not lieing)</p>
+            <img src="./Assets/ticket1.jpeg" style="width: 20vh; height: 10vh;">
+            <button class="button" onclick="window.location.href='./stage3.html'"><span>Buy Ticket</span><svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle><path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path></svg></button>
+        </div>
+        <div class="car-ticket">
+            <h3>Red Bull:</h3>
+            <p>2 ØⱧłØ $</p>
+            <h4>Details about Red Bull:</h4>
+            <p>Will give you wings and make you fly. Gets fuel from the bull part. Has a 90% chance of droping you from the sky. Customers love it.(we are not lieing)</p>
+            <img src="./Assets/ticket2.png" style="width: 20vh; height: 10vh;">
+            <button class="button" onclick="window.location.href='./stage3.html'"><span>Buy Ticket</span><svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle><path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path></svg></button>
+        </div>
+        <div class="car-ticket">
+            <h3>Jenga</h3>
+            <p>7 ØⱧłØ $</p>
+            <h4>Details about Jenga:</h4>
+            <p>Walks on it's own. will loose all it's peacies by the time you reach. you will here the Continus soung of wooden blocks colding. Customers love it.(we are not lieing)</p>
+            <img src="./Assets/ticket3.png" style="width: 20vh; height: 10vh;">
+            <button class="button" onclick="window.location.href='./stage3.html'"><span>Buy Ticket</span><svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle><path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path></svg></button>
+        </div>
+        <div class="car-ticket">
+            <h3>The chess bishup</h3>
+            <p>15 ØⱧłØ $</p>
+            <h4>Details about The chess bishup:</h4>
+            <p>Will play chess with you. during a trip on the chessboard to ohio. it will have ohio <s>monsters</s> creatures. you will have noting. Will make you feel like a looser. Customers love it.(we are not lieing)</p>
+            <img src="./Assets/ticket4.jpg" style="width: 20vh; height: 10vh;">
+            <button class="button" onclick="window.location.href='./stage3.html'"><span>Buy Ticket</span><svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle><path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path></svg></button>
+        </div>
+        <div class="car-ticket">
+            <h3>The upside down car</h3>
+            <p>19 ØⱧłØ $</p>
+            <h4>Details about the upside down car</h4>
+            <p>It is upside down. you can't stear it. it keeps on going on its on to the world of <s>Death</s> OHIO. Customers love it.(we are not lieing)</p>
+            <img src="./Assets/ticket5.jpg" style="width: 20vh; height: 10vh;">
+            <button class="button" onclick="window.location.href='./stage3.html'"><span>Buy Ticket</span><svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle><path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path></svg></button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            const fromValue = document.getElementById('from').value;
+            const errorMessage = document.getElementById('errorMessage');
+            const carTickets = document.getElementById('carTickets');
+
+            if (fromValue === 'I Dont Want to go') {
+                event.preventDefault();
+                errorMessage.textContent = 'Sorry that is not possible, give a different place.';
+                carTickets.style.display = 'none';
+            } else if (fromValue === 'Delhi') {
+                event.preventDefault();
+                errorMessage.textContent = '';
+                carTickets.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#notepad-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+textarea {
+    font-size: 40px; /* Adjust the font size as needed */
+    width: 100%;
+    flex: 1;
+}
+#calculator-container, #ai-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+#calculator, #ai-input {
+    font-size: 20px;
+    flex: 1;
+    height: 5vh;
+}
+#calculate-button, #ask-ai-button {
+    font-size: 20px;
+    margin-left: 10px;
+}
+#result {
+    font-size: 20px;
+    margin-left: 10px;
+}
