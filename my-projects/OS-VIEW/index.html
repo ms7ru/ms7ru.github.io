@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A_TechyBoy's OS</title>
+    <script type="module" src="./window.js"></script>
+    <script src="../list.js"></script>
+    <script type="module" src="./apps.js"></script>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div style="width: 100%; display: flex; backdrop-filter: blur(20px); background-color: rgba(255, 255, 255, 0.5); color: #fff; justify-content: space-between;">
+        <h3 onclick='document.getElementById("window").style.display = "block"' id="a_techyboys-os" style="margin-left: 16px; cursor: pointer">A_TechyBoy's OS</h3>
+        <h3 id="timeElement" style="margin-right: 16px;">6/21/2023 3:41 PM</h3>
+    </div>
+
+    <div style="backdrop-filter: blur(20px); background-color: rgba(255, 255, 255, 0.5); color: #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 10px; border: solid; width: 400px; border-radius: 16px; " id="window">
+        <div id="windowheader" style="border-radius: 6px; backdrop-filter: blur(20px); background-color: rgba(255, 255, 255, 0.5); display: flex; cursor: move; margin-top: 8px; justify-content: space-between;">
+            <div onclick='document.getElementById("window").style.display = "none"' style="cursor: pointer; margin: 0px; color: #000; font-weight: 500; margin-left: 16px;" class="closebutton"></div>
+            <h3 style="margin: 0px; color: #000; font-weight: 500;">Welcome Window</p>
+                <h3 style="margin: 0px; color: #000; font-weight: 500;"></p>
+        </div>
+        <div style="background-color: #fff;  margin: 1px; margin-top: 5px; border-radius: 3px; width: 100%;"> 
+            <div style="display: flex; ">
+                <h1>A_TechyBoy &nbsp;</h1>
+                <img id="logo" src="https://cloud-oqfxe4odv-hack-club-bot.vercel.app/0round_image_from_a_techyboy.svg">
+            </div>
+            <h3>hi i'm Rhythm aka A_TechyBoy, and i like comp sci, web dev, design, and more.</h3>
+            <img id="me-img" src="https://cloud-on7i3zvve-hack-club-bot.vercel.app/0image.png" alt="">
+        </div>
+    </div>
+    
+    <div id="taskbar" style="position: fixed; bottom: 0; width: 100%; z-index: 1000;">
+        <div id="taskbarheader" style="border-radius: 6px; backdrop-filter: blur(20px); background-color: rgba(255, 255, 255, 0.5); display: flex;">
+            <h3 style="margin: 0px; color: #000; font-weight: 500;">Taskbar:&nbsp;&nbsp;</h3>
+
+            <div id="taskbarapps" style="display: flex;"></div> 
+        <!--Auto load using js-->
+
+
+        </div>
+        
+    </div>
+    
+
+</body>
+</html>

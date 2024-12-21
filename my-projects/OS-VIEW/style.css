@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo&family=Orbitron:wght@400..900&family=Oxanium:wght@200&family=Silkscreen&display=swap');
+h1 {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: black;
+}
+
+h3 {
+    font-family: "Geo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+#logo {
+  transition: transform 1s ease-out;
+  transform: rotate(0deg);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#logo.rotating {
+  animation: rotate 2s linear infinite;
+}
+
+#logo.reverse-rotating {
+  animation: none;
+  transition: transform 1s ease-out;
+}
+
+#logo:hover {
+  animation: rotate 1s linear infinite;
+}
+
+#me-img {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+body {
+    background-image: url(https://cloud-895r3tp13-hack-club-bot.vercel.app/0hacker_hacker_man.gif);
+    background-size: cover;
+}
+
+  
+  #windowheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+  }
+
+  .closebutton {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-color: #EC6B5E;
+    border-radius: 16px;
+    border: solid 1px rgba(0, 0, 0, 0.25);
+    margin-left: 6px;
+  }

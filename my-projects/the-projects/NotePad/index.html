@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notepad</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.min.js"></script>
+
+    <script type="importmap">
+        {
+        "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+        }
+    </script>
+
+    <script type="module">
+        import { GoogleGenerativeAI } from "@google/generative-ai";
+
+        const API_KEY = "AIzaSyCaOtvPKAupepONslPzcD9YN_hkjP6GnlE";
+        const genAI = new GoogleGenerativeAI(API_KEY);
+
+        async function gemi() {
+            const prompt = document.getElementById('prompt').value;
+            document.getElementById('prompt').value = '';
+            const model = await genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+            alert('Loading');
+            const result = await model.generateContent(prompt);
+            alert( result.response.text() );
+        }
+
+        // Attach the function to the window object
+        window.gemi = gemi;
+    </script>
+
+</head>
+<body>
+    <div id="notepad-container">
+        <textarea rows="10" cols="50" spellcheck="false"></textarea>
+    </div>
+    <div id="calculator-container">
+        <input type="text" id="calculator" spellcheck="false">
+        <button id="calculate-button" onclick="calculate()">Calculate</button>
+        <div id="result"></div>
+    </div>
+    </div>
+    <div style="display: flex; width: 100%;">
+        <input type="text" id="prompt" placeholder="Enter your prompt here" style="flex: 7;">
+        <button style="flex: 1;" onclick="gemi()">Ask Gemi Bot</button>
+    </div>
+
+    <script>
+        function calculate() {
+            const input = document.getElementById('calculator').value;
+            let result;
+            try {
+                result = math.evaluate(input);
+            } catch (e) {
+                result = 'Error: Invalid expression';
+            }
+            document.getElementById('result').innerText = 'Result: ' + result;
+        }
+    </script>
+</body>
+</html>

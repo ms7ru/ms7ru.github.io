@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers Tools</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="names.js"></script>
+</head>
+<body>
+
+    <table><tr><td id="a"><a href="https://ms7ru.github.io"><button class="back">Go Back<svg fill="currentColor" viewBox="0 0 24 24" class="icon"> <path clip-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" fill-rule="evenodd" ></path> </svg> </button></a></td>
+    <td id="b"><h1>The Class List</h1></td>
+    <td id="c"><button class="back" onclick="reset()">Clear Read</button></td>
+    <td id="d"><button class="back" onclick="abbsent()">Change Statuses</button></td>
+    <td id="e"><div style="float: right;"><button id="rand_select" class="back" onclick="random()">Select Random Student</button></div></td></tr></table>
+    
+    <table><tr><td id="explaination">(<button class='button-i'>ABC</button>= left, <button class='diss-i'>ABC</button>= read, <button class='abb-i'>ABC</button> = absent/not allowed)</td>
+    <td id="slim-mode-tougle"><div class="checkbox-wrapper-8"> <input type="checkbox" id="cb3-8" class="tgl tgl-skewed" onchange="slim()"> <label for="cb3-8" data-tg-on="ON" data-tg-off="OFF" class="tgl-btn"></label> </div></td></tr></table>
+    <div id="generate"></div><hr>
+    
+
+    <div id="names_c"></div>
+    <div id="random">Press the button</div>
+</body>
+ <script src="script.js"></script>
+</html>

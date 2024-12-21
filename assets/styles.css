@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Geo&family=Orbitron:wght@400..900&family=Oxanium:wght@200&family=Silkscreen&display=swap');
+
+html, body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-family: "Oxanium", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: aliceblue;
+}
+
+:root {
+    transform: scale(2);
+    transform-origin: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121416;
+}
+
+.my-info h5 {
+    text-align: justify;
+    max-width: 450px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: aliceblue;
+}
+
+h2 {
+    font-family: "Geo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+}
+
+h3 {
+    font-family: "Geo", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+}
+
+h5 {
+    font-family: "Oxanium", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: aliceblue;
+}
+
+span {
+    font-family: "Oxanium", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: aliceblue;
+}
+
+h6 {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+}
+
+a {
+    color: aliceblue;
+}
+
+image {
+    width: 100%;
+    height: 100%;
+}
+
+#root img {
+  transition: transform 1s ease-out;
+  transform: rotate(0deg);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#root img.rotating {
+  animation: rotate 2s linear infinite;
+}
+
+#root img.reverse-rotating {
+  animation: none;
+  transition: transform 1s ease-out;
+}
+
+#root img:hover {
+  animation: rotate 1s linear infinite;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.links {
+    padding: 4px;
+    border-left: 3px solid #1d2023;
+}
+
+.links:first-child {
+    border-left: none;
+}
+
+.center {
+    align-items: center;
+    text-align: center;
+}
